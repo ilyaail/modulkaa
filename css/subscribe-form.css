@@ -1,0 +1,84 @@
+/*==================     Subscribe Form     ======================*/
+.subscribe-form {
+  margin-top: 20px;
+  position: relative;
+  display: block; }
+  .subscribe-form label {
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 3px 20px;
+    min-height: 30px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+  .subscribe-form label.name {
+    max-width: 100%; }
+  .subscribe-form label.email {
+    width: 100%;
+    min-width: 200px; }
+  .subscribe-form input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    vertical-align: baseline;
+    box-shadow: none;
+    color: #9f9f9f;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1;
+    vertical-align: middle; }
+  .subscribe-form a[data-type="submit"] {
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/form-arrow.png") no-repeat center center; }
+    .subscribe-form a[data-type="submit"]:hover:after {
+      display: none; }
+
+.subscribe-form .error, .subscribe-form .success {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -10px;
+  text-align: left;
+  padding: 4px 10px;
+  left: 5px;
+  right: 5px;
+  font-size: 10px;
+  line-height: 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #cbcbcb; }
+.subscribe-form .error {
+  display: none;
+  color: #f00;
+  overflow: hidden;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease; }
+.subscribe-form label.invalid .error {
+  display: block; }
+.subscribe-form .success {
+  display: none;
+  color: #0f0; }
+
+@media (max-width: 979px) {
+  .subscribe-form label.name,
+  .subscribe-form label.email {
+    display: block; } }
+
+/*# sourceMappingURL=subscribe-form.css.map */
