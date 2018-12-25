@@ -3441,6 +3441,9 @@ h3.title-body__head__rel{
   color: #fff;
   margin-top: 50px;
 }
+h3.title-body__head__modul{
+  padding: 0 15px 0 15px;
+}
 .well__03{
   margin-top: 50px;
       background: linear-gradient(0deg,rgba(57, 55, 57, 0.7),rgba(57, 55, 57, 0.7)),url(../images/background-section03.png) center center no-repeat;
@@ -3592,8 +3595,9 @@ h3.title-body__head{
 .testimonials{
   padding-bottom: 50px;
   background: url('../images/back__06.png') no-repeat center center;
-  background-color:#ccc;
-  margin-top: 50px;
+  background-size: cover;
+  background-color:#f5f5f5;
+ 
 }
 .testimonials__item{
   min-height: 440px;
@@ -3670,15 +3674,14 @@ h3.title-body__head{
 .title-body__description {
   display: inline-block;
   color: #70636b;
+  padding: 0 15px 0 15px;
 }
 .title-body__description p{
   margin-bottom: 20px;
   font-size: 13px;
   
 }
-.title-body__description p:first-child{
-  margin-top: 20px;
-}
+
 .prei_item:hover p {
     color: #fff;
 }
@@ -3747,7 +3750,7 @@ h3.title-body__head{
 
 }
 @media screen and (min-width: 992px){
-  .testimonial-slider{
+  .dn{
     display: none !important;
   }
 }
@@ -3758,6 +3761,7 @@ h3.title-body__head{
 }
 .testimonial-slider{
   margin-top: 20px;
+  margin:0 auto;
 }
 @media screen and (min-width: 375px) and (max-width: 424px){
   .catalog-item__text{
@@ -3793,14 +3797,48 @@ left: 110px;
   .client-list{
     display: none;
   }
-  .banners-wrapp__cols_new{
-    width: 70% !important;
-    margin: 0 auto;
-  }
+
   .frr{
     margin-top: 10px;
   }
 }
 .banners-wrapp__cols_new{
 width: 100%;
+}
+@media screen and (min-width:768px ) and (max-width:991px){
+  .frr__style{
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 767px){
+  .banners-wrapp__cols_new{
+    width: 100% !important; 
+  }
+}
+@media screen and (max-width: 991px){
+    .banners-wrapp__cols_new{
+    
+    margin: 0 auto;
+  }
+}
+.slick-prev,
+.slick-next
+{
+   top: 107% !important;
+   background: url(../images/arrow_next.png) center center no-repeat !important;
+   width: 48% !important;
+   height: 50px !important;
+
+}
+.slick-prev:before, .slick-next:before{
+  opacity: 0 !important;
+}
+.slick-prev{
+  transform: rotate(180deg) !important;
+  top: 101% !important;
+}
+@media screen and (min-width: 700px) and (max-width: 991px){
+  .slick-next{
+    top: 105% !important;
+  }
 }
